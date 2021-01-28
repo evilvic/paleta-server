@@ -17,6 +17,8 @@ router
 
         const { user } = req
 
+        console.log(user)
+
         res.status(200).json({ user })
 
     })
@@ -29,6 +31,7 @@ router
     .get('/user', (req, res, next) => {
 
         const { user } = req
+        console.log('getUser', user)
         res.status(200).json({ user })
     })
 
