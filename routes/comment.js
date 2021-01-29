@@ -13,7 +13,7 @@ router
     })
     .post('/new', async (req, res, next) => {
 
-        const { _id } = req.user
+        const { _id } = req.body.user
 
         const {
             content,
